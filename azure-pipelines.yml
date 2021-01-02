@@ -10,4 +10,4 @@ jobs:
     ServiceAWS: 'Centricity Sandbox Terraform service connection' 
     BucketName: 'terraform-state-bucket-centricity-sandbox'
     Key: 'us-east-1/terraform.tfstate'
-    environmentServiceNameAWS: 'Centricity Sandbox Terraform service connection'  
+    environmentServiceNameAWS: 'Centricity Sandbox Terraform service connection'
