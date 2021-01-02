@@ -1,0 +1,13 @@
+resources:
+  repositories:
+    - repository: templates   #new repository in azure repo
+      name: ashok
+      type: git
+jobs:
+- template: terraform-plan.yml@templates
+  parameters:
+    terraformVersion: '0.13.5'
+    ServiceAWS: 'Centricity Sandbox Terraform service connection' 
+    BucketName: 'terraform-state-bucket-centricity-sandbox'
+    Key: 'us-east-1/terraform.tfstate'
+    environmentServiceNameAWS: 'Centricity Sandbox Terraform service connection'  
